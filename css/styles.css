@@ -146,18 +146,29 @@ img {
 }
 
 .contact .link {
-  display: block;
+  display: flex;
   color: var(--primary-text-color);
 
   text-decoration: none;
 
   padding-top: 32px;
   padding-bottom: 32px;
+
+  align-items: center;
+  justify-content: center;
+}
+.link .header-icon {
+  fill: currentColor;
+
+  margin-right: 10px;
 }
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
+
+
 
 /* hero */
 
