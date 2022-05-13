@@ -387,14 +387,51 @@ img {
   margin-right: 10px;
 }
 
+/* client section */
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+
+  fill: #AFB1B8;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
 
 
 /* footer */
 .footer {
+  display: flex;
+  
   background-color: #2f303a;
 
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-box {
+  display: flex;
+
+  align-items: baseline;
+}
+
+.footer-container {
+  width: 231px;
+  margin-right: 70px;
 }
 
 .footer-container .logo {
@@ -438,6 +475,36 @@ img {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+.title-follow {
+ color: var(--white-text);
+ text-transform: uppercase;
+
+ margin-bottom: 20px;
+}
+
+.follow-link {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  fill: var(--white-text);
+}
+.follow-link:hover,
+.follow-link:focus {
+  background-color: var(--accent-color);
+}
+
+.follow-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* portfolio */
